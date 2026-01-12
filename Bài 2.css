@@ -1,0 +1,18 @@
+.service-card {
+  width: 300px;
+  border: 2px solid #1eff29;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Times New Roman", serif;
+}
+
+.service-card h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.service-card p {
+  margin: 0;
+  font-size: 18px;
+}

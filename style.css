@@ -1,0 +1,128 @@
+/* Reset cơ bản */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { 
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    background-color: #fff; 
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Bố cục chính */
+.news-wrapper {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr; /* Chia 2 cột */
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* Cột trái - EDITOR'S PICK */
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.star-badge {
+    background-color: #ff6f00;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.featured-article .image-box img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.article-title {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 15px 0;
+    color: #222;
+    line-height: 1.2;
+}
+
+.category-tag {
+    color: #4a4e69;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.article-summary {
+    color: #555;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Cột phải - BEAUTY & FASHION */
+.section-title-line {
+    border-left: 5px solid #ff6f00;
+    padding-left: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.overlay-image {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.overlay-image img {
+    width: 100%;
+    display: block;
+}
+
+.overlay-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    color: white;
+}
+
+.overlay-caption h3 {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.related-links {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.related-links li {
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.related-links li:hover {
+    color: #ff6f00;
+}
+
+/* Responsive cho Mobile */
+@media (max-width: 768px) {
+    .news-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
