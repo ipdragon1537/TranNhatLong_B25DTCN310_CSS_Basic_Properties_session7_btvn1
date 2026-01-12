@@ -1,163 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 40px 20px;
-        color: #333;
-      }
-      .content {
-        max-width: 800px;
-        width: 100%;
-        padding: 20px;
-      }
-      h1 {
-        text-align: center;
-        margin-bottom: 30px;
-        color: #2c3e50;
-        font-size: 2.5rem;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-      }
-      .subtitle {
-        text-align: center;
-        margin-bottom: 40px;
-        color: #7f8c8d;
-        font-size: 1.1rem;
-      }
-      .accordion {
-        width: 100%;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-        background-color: white;
-      }
-      .accordion-item {
-        border-bottom: 1px solid #eaeaae;
-      }
-      .accordion-item:last-child {
-        border-bottom: none;
-      }
-      .accordion-head {
-        width: 100%;
-        padding: 20px 25px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: none;
-        cursor: pointer;
-        text-align: left;
-        background-color: #fff;
-        font-size: 1.2rem;
-        transition: all 0.3s ease;
-        position: relative;
-        font-weight: 600;
-      }
-      .accordion-head:hover {
-        background-color: #f1f8ff;
-        color: #3498db;
-      }
-      .accordion-icon {
-        position: relative;
-        width: 20px;
-        height: 20px;
-        transition: all 0.3s ease;
-      }
-      .accordion-icon::before,
-      .accordion-icon::after {
-        content: "";
-        position: absolute;
-        background-color: #3498db;
-        transition: all 0.3s ease;
-      }
-      .accordion-icon::before {
-        top: 50%;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        transform: translateY(-50%);
-      }
-      .accordion-icon::after {
-        top: 0;
-        left: 50%;
-        width: 2px;
-        height: 100%;
-        transform: translateX(-50%);
-      }
-      .accordion-head.active .accordion-icon::after {
-        transform: translateX(-50%) rotate(90deg);
-        opacity: 0;
-      }
-      .accordion-head.active .accordion-icon {
-        transform: rotate(45deg);
-      }
-      .accordion-body {
-        padding: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease, padding 0.3s ease;
-        background-color: #fff;
-      }
-      .accordion-body.active {
-        padding: 20px 25px;
-        max-height: 1000px;
-      }
-      .accordion-content {
-        font-size: 1rem;
-        line-height: 1.6;
-        color: #555;
-      }
-      .accordion-content ul {
-        margin-left: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-      .accordion-content li {
-        margin-bottom: 8px;
-      }
-      .accordion-content strong {
-        color: #2c3e50;
-      }
-      @media (max-width: 768px) {
-        h1 {
-          font-size: 2rem;
-        }
-        .accordion-head {
-          padding: 18px 20px;
-          font-size: 1.1rem;
-        }
-        .accordion-body.active {
-          padding: 18px 20px;
-        }
-      }
-      @media (max-width: 480px) {
-        h1 {
-          font-size: 1.8rem;
-        }
-        .accordion-head.active {
-          padding: 16px 18px;
-          font-size: 1rem;
-        }
-        .accordion-body.active {
-          padding: 16px 18px;
-        }
-        .accordion-content {
-          font-size: 0.95rem;
-        }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <title>Card Theo dõi điều trị</title>
+    <link rel="stylesheet" href="Bài 6.css" />
   </head>
+  <body>
+    <div class="treatment-card">
+      <div class="status-label">Đang điều trị</div>
+      <h2 class="title">Niềng răng chỉnh nha</h2>
+      <div class="info-group">
+        Bác sĩ <i class="fa-solid fa-user-doctor"></i> :
+        <span class="highlight-text">BS. Nguyễn Minh Tâm</span>
+      </div>
+
+      <div class="info-group">
+        Chi phí <i class="fa-solid fa-calculator"></i> :
+        <span class="highlight-text">25.000.000 đ</span>
+      </div>
+      <div class="progress-section">
+        <span class="progress-title">Tiến trình điều trị</span>
+
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill"></div>
+        </div>
+
+        <div class="date-info">Bắt đầu: 10/03/2025</div>
+        <div class="date-info">Dự kiến hoàn thành: 10/03/2026</div>
+      </div>
+    </div>
+  </body>
 </html>
