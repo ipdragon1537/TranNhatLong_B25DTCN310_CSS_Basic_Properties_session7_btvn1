@@ -50,7 +50,7 @@ a {
   background: #1a73e8;
   color: #fff;
   font-weight: 600;
-  transition: transform 0.25s ease, opacity 0.25s ease, background 0.25s ease; /* TRANSITION */
+  transition: transform 0.25s ease, opacity 0.25s ease, background 0.25s ease;
 }
 
 .btn:hover {
