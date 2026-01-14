@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .first {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: relative;
+        top: 0%;
+        transition: background-color 10s ease, width 2s ease;
+      }
+      .first:hover {
+        background-color: blue;
+        width: 100px;
+        transform: rotate(360deg) translateX(30px);
+      }
+      .second {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        position: absolute;
+      }
+      .third {
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        position: fixed;
+      }
+      .container {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Demo position</h1>
+    <div class="container">
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
+    </div>
+    <div>
+      <h1>Demo transition</h1>
+    </div>
+  </body>
+</html>
